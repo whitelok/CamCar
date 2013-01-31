@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string name="app_name">CamcarLok</string>
+
+<string name="main_logo">CamCar真实体对战平台</string>
+<string name="main_single_mode">单人模式</string>
+<string name="main_mutical_mode">多人模式</string>
+
+<string name="button_setting">设置</string>
+<string name="button_xray">激光</string>
+<string name="textview_ip">IP地址</string>
+<string name="textview_wicamport">视频流端口</string>
+<string name="textview_ctrlport">控制端口</string>
+<string name="edittext_ip">请输入IP地址</string>
+<string name="edittext_wicamport">请输入视频流端口</string>
+<string name="edittext_ctrlport">请输入控制端口</string>
+
+<string name="menu_scanandlist">扫描CamCar</string>
+<string name="menu_settingonweb">设置CamCar</string>
+<string name="menu_disconnect">断开控制</string>
+<string name="menu_aboutus">关于我们</string>
+
+<string name="camcarmenu_titletxt">系统设置</string>
+</resources>
