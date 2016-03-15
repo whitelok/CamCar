@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <yizuoshe.WmiiManager.wiCam.WicamView
+            android:id="@+id/wicamVideo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <SeekBar
+            android:id="@+id/camcardirection"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8px"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@xml/seekbar_style"
+            android:thumb="@xml/thumb" />
+
+        <ToggleButton
+            android:id="@+id/tbtn_wicamon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/unconnect"
+            android:text="ToggleButton"
+            android:textColor="#FFFFFF"
+            android:textOff=" "
+            android:textOn=" "
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/xray"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3px"
+            android:layout_marginBottom="50px"
+            android:layout_marginRight="50px"
+            android:background="@drawable/xray"
+            android:paddingBottom="50px"
+            android:paddingRight="50px"
+            android:src="@drawable/xray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ctrl_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/light" />
+
+            <ImageView
+                android:id="@+id/takephoto"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_gravity="right"
+                android:src="@drawable/takephoto" />
+
+            <ImageView
+                android:id="@+id/takevideo"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_gravity="right"
+                android:src="@drawable/takevideo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="True"
+            android:layout_centerHorizontal="True"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="HP:" />
+
+            <ProgressBar
+                android:id="@+id/hpprogress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="50" />
+        </LinearLayout>
+
+        <com.lok.widget.CtrlStick
+            android:id="@+id/ctrlstick"
+            android:layout_width="200px"
+            android:layout_height="180px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+
+</FrameLayout>
